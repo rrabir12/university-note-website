@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Bit_notes</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &::-webkit-scrollbar{
+      display: none;
+     }
+}
+header{
+    text-align: center;
+    justify-content: center;
+    padding: 80px;
+    background-color:#0C0C0C ;
+    height: 300px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #FBFBF2;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 35%;
+}
+nav ul{
+  list-style: none;
+  background: #1C1C2C;
+  position: sticky;
+}
+nav ul li{
+  display: inline-block;
+  position: relative;
+  
+}
+nav ul li a{
+  display: block;
+    padding: 25px 30px;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+  }
+  nav ul li a:hover{
+    background-color: #353563;
+    color: rgb(175, 180, 190);
+    border-radius: 16px;
+  }
+  nav ul li ul .dropdown li{
+    display: block;
+    
+  }
+  nav ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+    background: #1C1C2C;
+    display: none;
+    }
+   nav ul li:hover ul.dropdown{
+      display: block;
+      background: #40405c;
+      }
+.tracking-in-contract-bck-bottom {
+	-webkit-animation: tracking-in-contract-bck-bottom 6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract-bck-bottom 6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+ @-webkit-keyframes tracking-in-contract-bck-bottom {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px) translateY(300px);
+              transform: translateZ(400px) translateY(300px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract-bck-bottom {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px) translateY(300px);
+              transform: translateZ(400px) translateY(300px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract 5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+ @-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+    footer {
+        height: 140px;
+        background-color: #1C1C2C;
+        color: white;
+        padding: 10px 17px;
+      }
+      .follow img {
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+      }
+      .follow ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .follow li {
+        list-style: none;
+      }
+      .h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+
+/* for notes */
+.bit_que{
+    margin-top: 65px;
+    height: 650px;
+    background-color: #113554;
+    position: relative;
+    margin-bottom: 30px;
+}
+.bit_que h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 30px;
+}
+/* for dropdown */
+.dropbtn {
+    margin-left: 650px;
+  background-color: #0b4b84;
+  color: white;
+  padding: 16px;
+  border-radius: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+}
+
+.dropdown {
+    margin: 6px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+    margin-left: 850px; 
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+} */
+
+/* for reveal on scroll */
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+</style>
+<body>
+    <header >
+        <h1 class="tracking-in-contract-bck-bottom"> Technology's field notes and Syllabus</h1><br>
+        <h2 class="tracking-in-contract-bck-bottom">Welcome to UniversityNotes</h2>
+    </header>
+    <nav class="tracking-in-contract">
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="#">PROGRAMS</a>
+        <ul class="dropdown">
+          <li><a href="bit_prog.html">BIT</a></li>
+          <li><a href="bca_prog.html">BCA</a></li>
+        </ul>
+        </li>
+        <li><a href="#">NOTES</a>
+          <ul class="dropdown">
+            <li><a href="bit_notes.html">BIT</a></li>
+            <li><a href="#">BCA</a></li>
+          </ul>
+        </li>
+        <li><a href="#">QUESTIONS</a>
+          <ul class="dropdown">
+            <li><a href="bit_que.html">BIT</a></li>
+            <li><a href="#">BCA</a></li>
+          </ul>
+        </li>
+        <li><a href="#">SYLLABUS</a>
+          <ul class="dropdown">
+            <li><a href="#">BIT</a></li>
+            <li><a href="#">BCA</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <section class="bit_que reveal">
+        <h2>BIT Questions</h2>
+        <div class="dropdown reveal">
+            <button class="dropbtn">1st Semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1iruvrfcA_j_JNPnYx5IhlwreOhW1N8y9">All Questions</a>
+            </div>
+          </div>
+          <div class="dropdown reveal">
+            <button class="dropbtn">2nd Semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1UNH6h2aSpMDghXvBgF6fYd2KCUG0ZNcQ">All Questions</a>
+            </div><br>
+          </div>
+          <div class="dropdown reveal">
+            <button class="dropbtn">3rd Semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1vIurgnIlaKawAEwqz4EYRgtj6AYCRV9O">All Questions</a>
+            </div>
+          </div>
+          <div class="dropdown reveal">
+            <button class="dropbtn">4th semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1RRIljX80HkEVZXY68jocIrttvGTCfH68">All Questions</a>
+            </div>
+          </div>
+          <div class="dropdown reveal">
+            <button class="dropbtn">5th semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1FETK8eP4HN9LAH1JDT1BqW8ZkNcNJ83B">All Questions</a>
+            </div>
+          </div>
+          <div class="dropdown reveal">
+            <button class="dropbtn">6th semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1ZMpxEY0MeFFH1riGZSQXlmAWQCzrRNos">All Questions</a>
+            </div>
+          </div>
+          <div class="dropdown reveal">
+            <button class="dropbtn">7th Semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1zWpR4lzqRaKj46lom9RvwbBaC9US0fcn">All Questions</a>
+            </div>
+          </div>
+          <div class="dropdown reveal">
+            <button class="dropbtn">8th semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1N0L268j1cm-l06lRRenb4RJJqo8f0rJ1">All Questions</a>
+            </div>
+          </div>  
+          
+    </section>
+    <footer class="center" >
+        <div class="follow">
+          <h3 h-primary center>follow us</h3>
+          <h3 h-primary center>on</h3>
+          <ul class="social-links">
+            <li>
+              <a href="https://www.facebook.com"
+                ><img src="facebook.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com">
+                <img src="instagram.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com"
+                ><img src="linkedin.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/#top"
+                ><img src="pinterest.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"><img src="twitter.png" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com"><img src="youtube.png" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot">
+          copyright &copy; www.universitynotes.com. All right reserved!
+        </div>
+      </footer>
+      <script>
+        function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 135;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+      </script>
+</body>
+</html>

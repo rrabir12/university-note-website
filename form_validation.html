@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <style>
+        body{
+            /* background-color: aqua; */
+            background: url("/pic/formbg.jpg");
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          
+        }
+        #form-container{
+            background-color: white;
+            padding: 60px;
+            display: inline-block;
+            margin: 100px 200px 100px 500px;
+            flex-direction: column;
+            text-align: center;
+            border-radius: 20px;
+            margin-top: 15%;
+        }
+        h2{
+            margin: 0px 0px 10px 0px;
+        }
+        input{
+            width: 200px;
+            margin: 10px 0px;
+            padding: 10px;
+        }
+        input[type="submit"]{
+            width: 195px;
+            background-color: rgb(76, 76, 209);
+            border: 0px;
+            color: white;
+            cursor: pointer;
+        }
+        #form-container span{
+            font-size: 13px;
+            
+        }
+        #form-container span a{
+            text-decoration: none;
+            color: blue;
+        }
+        .error{
+            color: red;
+            margin: 0px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <ul>
+            <img src="/pic/roytech logo.jpg" alt="">
+            <li class="active"><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="#">PROGRAMS</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me"><a href="bit_prog.html">BIT</a>
+                       
+                    </li>
+                    <li><a href="bca_prog.html">BCA</a></li>
+                   
+                </ul>
+            </div>
+            </li>
+            <li><a href="#">NOTES</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li class="hover-me"><a href="bit_notes.html">BIT</a>
+                           
+                        </li>
+                        <li><a href="bit_notes.html">BCA</a></li>
+                       
+                    </ul>
+                </div></li>
+            <li><a href="#">QUESTIONS</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li class="hover-me"><a href="bit_que.html">BIT</a>
+                           
+                        </li>
+                        <li><a href="bit_que.html">BCA</a></li>
+                       
+                    </ul>
+                </div></li>
+            <li><a href="#">SYLLABUS</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li class="hover-me"><a href="#">BIT</a>
+                           
+                        </li>
+                        <li><a href="#">BCA</a></li>
+                       
+                    </ul>
+                </div></li>
+            <li><a href="contact.html">CONTACT</a></li>
+           <span><a href="/form_validation.html">Login/Signup</a></span>
+        </ul>
+    </div>
+    <div id="form-container">
+        <h2>Login</h2>
+        <form action="" onsubmit="return validateform()">
+            <input type="text" placeholder="username" id="username"><br>
+            <p id="usererror" class="error"></p>
+            <input type="password" placeholder="password" id="password"><br>
+            <p id="passerror" class="error"></p>
+            <input type="submit">
+           
+        </form>
+        <span>Did't have an account? <a href="">Signup now</a></span>
+    </div>
+    <script>
+        let username=document.getElementById("username");
+        let password=document.getElementById("password");
+        let flag=1;
+
+        function validateform(){
+           if(username.value==""){
+            document.getElementById("usererror").innerHTML="user name is empty";
+            flag=0;
+           }
+           else if(username.value.length<8){
+            document.getElementById("usererror").innerHTML="user name require min 8 char"; 
+            flag=0;
+           }
+           else{
+            document.getElementById("usererror").innerHTML="";
+            flag=1;
+           }
+           if(password.value==""){
+            document.getElementById("passerror").innerHTML="Password is empty";
+            flag=0;
+           }
+           else{
+            document.getElementById("passerror").innerHTML="";
+            flag=1;
+           }
+           if(flag){
+            return true;
+           }
+           else{
+            return false;
+           }
+        }
+    </script>
+        <footer class="center">
+            <div class="follow">
+              <h3 h-primary center>follow us</h3>
+              <h3 h-primary center>on</h3>
+              <ul class="social-links">
+                <li>
+                  <a href="https://www.facebook.com"><img src="/pic/facebook.png" /></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com"> <img src="/pic/instagram.png" /></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com"><img src="/pic/linkedin.png" /></a>
+                </li>
+                <li>
+                  <a href="https://www.pinterest.com/#top"
+                    ><img src="/pic/pinterest.png"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com"><img src="/pic/twitter.png" /></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com"><img src="/pic/youtube.png" /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="foot">
+              copyright &copy; www.universitynotes.com. All right reserved!
+            </div>
+          </footer>
+</body>
+</html>

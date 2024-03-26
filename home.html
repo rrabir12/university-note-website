@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universitynotes | Home</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/index.css">
+  <style>
+    #clock {
+      float: right;
+      letter-spacing: 4px;
+      font-style: italic;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: bold;
+      font-size: 30px;
+      color: rgb(210, 216, 230);
+      font-size: large;
+      padding: 15px;
+    }
+  </style>
+  <body>
+    <div class="menu-bar">
+      <ul>
+          <img src="/pic/roytech logo.jpg" alt="">
+          <li class="active"><a href="home.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#">PROGRAMS</a>
+          <div class="sub-menu">
+              <ul>
+                  <li class="hover-me"><a href="bit_prog.html">BIT</a>
+                     
+                  </li>
+                  <li><a href="bca_prog.html">BCA</a></li>
+                 
+              </ul>
+          </div>
+          </li>
+          <li><a href="#">NOTES</a>
+              <div class="sub-menu">
+                  <ul>
+                      <li class="hover-me"><a href="bit_notes.html">BIT</a>
+                         
+                      </li>
+                      <li><a href="bit_notes.html">BCA</a></li>
+                     
+                  </ul>
+              </div></li>
+          <li><a href="#">QUESTIONS</a>
+              <div class="sub-menu">
+                  <ul>
+                      <li class="hover-me"><a href="bit_que.html">BIT</a>
+                         
+                      </li>
+                      <li><a href="bit_que.html">BCA</a></li>
+                     
+                  </ul>
+              </div></li>
+          <li><a href="#">SYLLABUS</a>
+              <div class="sub-menu">
+                  <ul>
+                      <li class="hover-me"><a href="#">BIT</a>
+                         
+                      </li>
+                      <li><a href="#">BCA</a></li>
+                     
+                  </ul>
+              </div></li>
+          <li><a href="contact.html">CONTACT</a></li>
+         <span><a href="/form_validation.html">Login/Signup</a></span>
+      </ul>
+  </div>
+    <div id="clock"></div>
+    <script>
+      function updateClock() {
+        var date = new Date();
+        var time = date.toLocaleTimeString();
+        document.getElementById("clock").innerHTML = time;
+      }
+      setInterval(updateClock, 1000);
+    </script>
+    <header>
+      <h1>
+        Technology's field notes and Syllabus
+      </h1>
+      <br />
+      <h2>
+        Welcome to UniversityNotes
+      </h2>
+    </header>
+    
+    
+    <section class="video">
+      <div class="container-fluid reveal">
+        <h2>Programming courses video</h2>
+        <div class="con reveal">
+          <video
+            src="/pic/java.mp4"
+            width="350px"
+            poster="/pic/download.jpg"
+            controls
+          ></video>
+          <video
+            src="/pic/java.mp4"
+            width="350px"
+            poster="/pic/html pic.jpg"
+            controls
+          ></video>
+          <video src="/pic/java.mp4" width="350px" poster="/pic/c.jpg" controls></video>
+          <video src="/pic/java.mp4" width="350px" poster="/pic/b.jpg" controls></video>
+          <video src="/pic/java.mp4" width="350px" poster="/pic/j.jpg" controls></video>
+          <video
+            src="/pic/java.mp4"
+            width="350px"
+            poster="/pic/javascriptfull.png"
+            controls
+          ></video>
+          <video
+            src="/pic/java.mp4"
+            width="350px"
+            poster="/pic/backendpython.png"
+            controls
+          ></video>
+          <video src="/pic/java.mp4" width="350px" poster="/pic/c.jpg" controls></video>
+        </div>
+      </div>
+    </section>
+    <section class="p reveal">
+      <h2>Recent Blogs</h2>
+      <div class="pg reveal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+          aspernatur molestiae et, adipisci, delectus ea, repellendus hic iure
+          veritatis explicabo sunt minus libero rerum. Quibusdam quas vel
+          similique optio minima fuga, deleniti doloribus incidunt alias
+          possimus, ex autem maiores architecto ratione dolore ipsum dolor.
+          Dolore debitis ratione vero explicabo voluptatibus voluptas animi
+          fugit, error optio necessitatibus harum ea minus praesentium unde
+          fugiat nihil a nulla eos quas. Eveniet, rerum doloremque corrupti
+          officia, ab expedita nisi eaque sapiente, sint culpa ullam distinctio
+          beatae corporis excepturi. Non, nam harum. Ratione maiores tempore
+          recusandae fugiat enim illo facere explicabo omnis neque? Ab,
+          accusantium.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+          esse placeat. Debitis veritatis unde est sed asperiores voluptates,
+          minima quibusdam, quod nesciunt accusantium aspernatur iure cupiditate
+          ducimus neque! Rem officia quam in laborum expedita, nisi voluptas
+          doloribus sit repudiandae cum impedit alias, quos temporibus tenetur,
+          quisquam ad iste minima vel facere ullam nihil sunt dolore provident
+          exercitationem? Maxime, inventore laborum asperiores, quas dolores
+          iure corrupti dolorem quod amet, error sequi?
+        </p>
+      </div>
+    </section>
+    <section class="testmonials reveal">
+      <h2>Testmonials</h2>
+      <div class="test">
+        <div class="test1 reveal">
+          <img src="/pic/photo1.jpg" alt="Avatar" />
+          <span>Christina Helio</span>
+          <p>The notes here are authentic</p>
+        </div>
+
+        <div class="test2 reveal">
+          <img src="/pic/photo2.jpg" alt="Avatar" />
+          <span>Rebec stued.</span>
+          <p>I like the universitynotes authenticity</p>
+        </div>
+
+        <div class="test3 reveal">
+          <img src="/pic/photo3.jpg" alt="Avatar" />
+          <span>Mr Frog.</span>
+          <p>Beautiful notes and design</p>
+        </div>
+      </div>
+    </section>
+    <footer class="center">
+      <div class="follow">
+        <h3 h-primary center>follow us</h3>
+        <h3 h-primary center>on</h3>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.facebook.com"><img src="/pic/facebook.png" /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com"> <img src="/pic/instagram.png" /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com"><img src="/pic/linkedin.png" /></a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.com/#top"
+              ><img src="/pic/pinterest.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com"><img src="/pic/twitter.png" /></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com"><img src="/pic/youtube.png" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="foot">
+        copyright &copy; www.universitynotes.com. All right reserved!
+      </div>
+    </footer>
+
+    <script>
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 10;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+    </script>
+  </body>
+</html>

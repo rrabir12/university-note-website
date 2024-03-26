@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Contact</title>
+</head>
+<!-- <link rel="stylesheet" href="style.css"> -->
+<link rel="stylesheet" href="/style/index.css">
+<style>
+     *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &::-webkit-scrollbar{
+      display: none;
+     }
+}
+header{
+    text-align: center;
+    justify-content: center;
+    padding: 180px;
+    background-color:#0C0C0C ;
+    height: 500px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #FBFBF2;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 35%;
+}
+
+    /* contact section */
+    #contact {
+      margin-top: 65px;
+        position: relative;
+        /* box-shadow: -1px 13px 81px -15px rgba(0,0,0,0.34); */
+        /* margin-left: 40vw; */
+        display: flex;
+      }
+
+      #contact  .left{
+        height: 100%;
+        width: 50%;
+      }
+      #contact  .left img{
+          height: 95vh;
+          width: 55vw;
+        }
+      
+      #contact-box {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        justify-content: center;
+        padding: 30px;
+      }
+      #contact-box h1{
+        margin-bottom: 30px;
+        font-size: 40px;
+      }
+
+      #contact-box input,
+      #contact-box textarea {
+        width: 100%;
+        padding: 0.5rem;
+        margin: 0.5rem;
+      }
+      #contact-box button{
+        margin-top: 12px;
+        height: 38px;
+        width: 120px;
+        border-radius: 12px;
+        border: none;
+        cursor: pointer;
+      }
+      #contact-box button:hover{
+        color: white;
+        background-color: red;
+      }
+      /* #contact-box form {
+        width: 400px;
+      } */
+      #contact-box label {
+        font-size: 1.1rem;
+      }
+      .h-primary {
+        font-size: 2.5rem;
+        padding: 12px;
+      }
+      .center {
+        text-align: center;
+      }
+      footer {
+        height: 140px;
+        background-color: #1C1C2C;
+        color: white;
+        padding: 10px 17px;
+      }
+      .follow img {
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+      }
+      .follow ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .follow li {
+        list-style: none;
+      }
+      .h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+
+/* for clock */
+#clock {
+      float: right;
+      letter-spacing: 4px;
+      font-style: italic;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: bold;
+      font-size: 30px;
+      /* box-shadow: -1px 13px 81px -15px; */
+      color: rgb(213, 218, 229);
+      font-size: large;
+      padding: 15px;
+    }
+
+</style>
+<body>
+  <div class="menu-bar">
+    <ul>
+        <img src="/pic/roytech logo.jpg" alt="">
+        <li class="active"><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#">PROGRAMS</a>
+        <div class="sub-menu">
+            <ul>
+                <li class="hover-me"><a href="bit_prog.html">BIT</a>
+                   
+                </li>
+                <li><a href="bca_prog.html">BCA</a></li>
+               
+            </ul>
+        </div>
+        </li>
+        <li><a href="#">NOTES</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me"><a href="bit_notes.html">BIT</a>
+                       
+                    </li>
+                    <li><a href="bit_notes.html">BCA</a></li>
+                   
+                </ul>
+            </div></li>
+        <li><a href="#">QUESTIONS</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me"><a href="bit_que.html">BIT</a>
+                       
+                    </li>
+                    <li><a href="bit_que.html">BCA</a></li>
+                   
+                </ul>
+            </div></li>
+        <li><a href="#">SYLLABUS</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me"><a href="#">BIT</a>
+                       
+                    </li>
+                    <li><a href="#">BCA</a></li>
+                   
+                </ul>
+            </div></li>
+        <li><a href="contact.html">CONTACT</a></li>
+       <span><a href="/form_validation.html">Login/Signup</a></span>
+    </ul>
+</div> 
+  <div id="clock"></div>
+  <script>
+    function updateClock() {
+      var date = new Date();
+      var time = date.toLocaleTimeString();
+      document.getElementById("clock").innerHTML = time;
+    }
+    setInterval(updateClock, 1000);
+  </script>
+    <header >
+        <h1 class="tracking-in-contract-bck-bottom"> Technology's field notes and Syllabus</h1><br>
+        <h2 class="tracking-in-contract-bck-bottom">Welcome to UniversityNotes</h2>
+    </header>
+    <section id="contact">
+      <div class="left">
+        <img src="https://png.pngitem.com/pimgs/s/196-1960631_svg-download-handshake-transparent-animated-handshake-clipart-hd.png" alt=""></img>
+      </div>
+    </div>
+        <div id="contact-box">
+        <h1>Contact Us</h1>
+          <form action="">
+            <div class="form-items">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name" required
+              />
+            </div>
+            <div class="form-items">
+              <label for="E-mail">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email" required
+              />
+            </div>
+            <div class="form-items">
+              <label for="number">Number</label>
+              <input
+                type="phone number"
+                name="pnum"
+                maxlength="10"
+                id="Number"
+                placeholder="Enter your number" required
+              />
+            </div>
+            <div class="form-items">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10" required
+              ></textarea>
+            </div>
+            <button type="btn" name="Submit">Send</button>
+          </form>
+        </div>
+      </section>
+      <footer class="center">
+        <div class="follow">
+          <h3 h-primary center>follow us</h3>
+          <ul class="social-links">
+            <li>
+              <a href="https://www.facebook.com"
+                ><img src="/pic/facebook.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com">
+                <img src="/pic/instagram.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com"
+                ><img src="/pic/linkedin.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/#top"
+                ><img src="/pic/pinterest.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"><img src="/pic/twitter.png" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com"><img src="/pic/youtube.png" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot">
+          copyright &copy; www.Foodnagar.com. All right reserved!
+        </div>
+      </footer>
+</body>
+</html>

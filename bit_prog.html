@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Bit_prog</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="/style/index.css">
+</head>
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &::-webkit-scrollbar{
+      display: none;
+     }
+   }
+header{
+    text-align: center;
+    justify-content: center;
+    padding: 180px;
+    background-color:#0C0C0C ;
+    height: 500px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #FBFBF2;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 35%;
+}
+
+    footer {
+      
+        height: 140px;
+        background-color: #1C1C2C;
+        color: white;
+        padding: 10px 17px;
+      }
+      .follow img {
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+      }
+      .follow ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .follow li {
+        list-style: none;
+      }
+      .h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+
+/* for pu section */
+.pu{
+    margin-top: 65px;
+    margin-bottom: 10px;
+    padding: 40px;
+    background-color: #1C1C2C;
+}
+.pu h2{
+    text-align: center;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(17, 16, 16);
+}
+.pu img{
+    margin-top: 20px;
+    margin-left: 370px;
+    margin-bottom: 40px;
+}
+.pu p{
+    font-style: italic;
+    text-align: justify;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(232, 228, 228);  
+}
+
+/* for tu section */
+.tu{
+    margin-top: 65px;
+    margin-bottom: 60px;
+    padding: 40px;
+    background-color: #1C1C2C;
+}
+.tu h2{
+    text-align: center;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(17, 16, 16);
+}
+.tu img{
+    margin-top: 20px;
+    margin-left: 370px;
+    margin-bottom: 40px;
+}
+.tu p{
+    font-style: italic;
+    text-align: justify;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(237, 230, 230);   
+}
+
+/* for clock */
+#clock {
+      float: right;
+      letter-spacing: 4px;
+      font-style: italic;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: bold;
+      font-size: 30px;
+      /* box-shadow: -1px 13px 81px -15px; */
+      color: rgb(211, 216, 227);
+      font-size: large;
+      padding: 15px;
+    }
+/* for reveal on scroll */
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+</style>
+<body>
+  <div class="menu-bar">
+    <ul>
+        <img src="/pic/roytech logo.jpg" alt="">
+        <li class="active"><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#">PROGRAMS</a>
+        <div class="sub-menu">
+            <ul>
+                <li class="hover-me"><a href="bit_prog.html">BIT</a>
+                   
+                </li>
+                <li><a href="bca_prog.html">BCA</a></li>
+               
+            </ul>
+        </div>
+        </li>
+        <li><a href="#">NOTES</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me"><a href="bit_notes.html">BIT</a>
+                       
+                    </li>
+                    <li><a href="bit_notes.html">BCA</a></li>
+                   
+                </ul>
+            </div></li>
+        <li><a href="#">QUESTIONS</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me"><a href="bit_que.html">BIT</a>
+                       
+                    </li>
+                    <li><a href="bit_que.html">BCA</a></li>
+                   
+                </ul>
+            </div></li>
+        <li><a href="#">SYLLABUS</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me"><a href="#">BIT</a>
+                       
+                    </li>
+                    <li><a href="#">BCA</a></li>
+                   
+                </ul>
+            </div></li>
+        <li><a href="contact.html">CONTACT</a></li>
+       <span><a href="/form_validation.html">Login/Signup</a></span>
+    </ul>
+</div>
+  <div id="clock"></div>
+  <script>
+    function updateClock() {
+      var date = new Date();
+      var time = date.toLocaleTimeString();
+      document.getElementById("clock").innerHTML = time;
+    }
+    setInterval(updateClock, 1000);
+  </script>
+    <header >
+        <h1 > Technology's field notes and Syllabus</h1><br>
+        <h2 >Welcome to UniversityNotes</h2>
+    </header>
+    
+    <section class="pu reveal">
+        <h2>BIT at Purbanchal University</h2>
+        <div class="prog reveal">
+        <img src="/pic/pu.jpg" alt="" height="200px" width="450px">
+        </div>
+        <div class="prog reveal">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem voluptas dignissimos ipsam veritatis deleniti possimus nisi voluptates incidunt ipsum accusamus, aperiam, quis similique magnam odit animi sed tempora molestias neque, debitis earum laboriosam minus. Fugiat, possimus. Molestiae magnam quasi minus aliquid impedit iure at corporis, laudantium doloremque porro dolor adipisci dolores facilis ut pquibusdam, officia voluptatum sapiente, perferendis facere sint ab aperiam. Quis ex libero nostrum itaque quam voluptatum ad distinctio aperiam natus eveniet consectetur, aut placeat odit! Alias mollitia doloribus tempore minima! Dolores nam eos officiis rerum, excepturi maxime sit, delectus iste, inventore aspernatur aliquam debitis! Delectus esse repellat officia incidunt officiis consequuntur animi quae voluptate qui architecto aliquid nesciunt ab itaque alias laboriosam molestiae ipsum illo, vero accusamus quos.</p><br>
+        <p> necessitatibus quo. Qui earum natus modi magnam quibusdam nihil aut mollitia ea rerum tempora sequi tempore soluta asperiores voluptate, libero, animi eius labore. Beatae nulla in, alias, voluptas est itaque harum inventore id architecto, dolore quam consequuntur debitis nesciunt esse aperiam quis eos illo commodi. Natus officia, aperiam error sequi in magni perspiciatis iure sed nostrum quod illo ab doloribus accusantium quibusdam, explicabo consectetur nulla repudiandae. Officia fugiat saepe aperiam et quidem obcaecati neque debitis ex. Perferendis aliquam earum consequatur nisi minima assumenda autem, fuga ratione error tempora corporis porro asperiores labore iste modi quo rerum velit voluptate quibusdam aut, cum neque eligendi iure reprehenderit! Illum autem veritatis labore, cum voluptas distinctio. Accusantium reiciendis numquam mollitia voluptatum? Nam eos sapiente sequi consequuntur nulla fugit consectetur optio odio.</p><br>
+    <p>Sapiente minima dolores quae odio saepe nemo veniam ipsum ad ex, alias itaque nam autem recusandae cupiditate voluptas minus harum eum. Nisi totam a ut! Hic esse nesciunt ratione molestias excepturi voluptas tempora incidunt totam, sit vitae fugit veniam doloremque illo placeat aut minima animi reprehenderit suscipit debitis rem magnam provident saepe? Rem, rerum ex delectus asperiores reprehenderit assumenda adipisci eos, voluptas fuga omnis perferendis tenetur, facilis exercitationem. Delectus suscipit quos hic natus eveniet porro sed odio voluptatibus est dolor optio, molestias nulla placeat laudantium aperiam perspiciatis odit. Velit deserunt possimus aliquam, repellat provident sapiente libero consequatur eius tempora magnam perspiciatis expedita vero porro consectetur sed quos. Vitae nesciunt a facere porro qui iste labore repellendus rerum modi iusto hic saepe dignissimos magnam dolores autem, nostrum officia rem commodi sed aliquid ducimus reiciendis corporis eius! Velit illo officia quia at molestias deserunt praesentium, voluptas ipsam, deleniti, minus tempore? Vitae, ex sunt. Repellat quae eum eius aperiam magnam possimus repudiandae, alias a? Reprehenderit quae architecto quos ab excepturi, provident voluptatum rem amet consequatur minima esse nulla vel natus ad optio praesentium saepe. Alias libero, incidunt amet corrupti architecto voluptatum impedit non itaque placeat cumque aliquid, accusamus minus sed distinctio nobis tempore molestias quibusdam minima suscipit eius quis dolores, iste consequuntur quas. Neque praesentium vel quisquam eum corrupti et vitae architecto repellendus maxime vero recusandae laudantium in quasi veniam, libero quis nihil minus sit? Quas ipsum quisquam sit ab et. Cum qui et quia. Asperiores, provident. Molestias aliquid debitis corporis iusto veritatis quaerat repudiandae.</p>
+        </div>
+      </section>
+        <section class="tu reveal">
+        <h2>BIT at Tribhuvan University</h2>
+        <div class="prog reveal">
+        <img src="/pic/Tribhunvan-University.jpg" alt="" height="200px" width="450px">
+        </div>
+        <div class="prog reveal">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem voluptas dignissimos ipsam veritatis deleniti possimus nisi voluptates incidunt ipsum accusamus, aperiam, quis similique magnam odit animi sed tempora molestias neque, debitis earum laboriosam minus. Fugiat, possimus. Molestiae magnam quasi minus aliquid impedit iure at corporis, laudantium doloremque porro dolor adipisci dolores facilis ut quibusdam, officia voluptatum sapiente, perferendis facere sint ab aperiam. Quis ex libero nostrum itaque quam voluptatum ad distinctio aperiam natus eveniet consectetur, aut placeat odit! Alias mollitia doloribus tempore minima! Dolores nam eos officiis rerum, excepturi maxime sit, delectus iste, inventore aspernatur aliquam debitis! Delectus esse repellat officia incidunt officiis consequuntur animi quae voluptate qui architecto aliquid nesciunt ab itaque alias laboriosam molestiae ipsum illo, vero accusamus quos
+        </p><br>
+        <p> quo. Qui earum natus modi magnam quibusdam nihil aut mollitia ea rerum tempora sequi tempore soluta asperiores voluptate, libero, animi eius labore. Beatae nulla in, alias, voluptas est itaque harum inventore id architecto, dolore quam consequuntur debitis nesciunt esse aperiam quis eos illo commodi. Natus officia, aperiam error sequi in magni perspiciatis iure sed nostrum quod illo ab doloribus accusantium quibusdam, explicabo consectetur nulla repudiandae. Officia fugiat saepe aperiam et quidem obcaecati neque debitis ex. Perferendis aliquam earum consequatur nisi minima assumenda autem, fuga ratione error tempora corporis porro asperiores labore iste modi quo rerum velit voluptate quibusdam aut, cum neque eligendi iure reprehenderit! Illum autem veritatis labore, cum voluptas distinctio. Accusantium reiciendis numquam mollitia voluptatum? Nam eos sapiente sequi consequuntur nulla fugit consectetur optio odio. Sapiente minima dolores quae odio saepe nemo veniam ipsum ad ex, alias itaque nam autem recusandae cupiditate voluptas minus harum eum. Nisi totam a ut! Hic esse nesciunt ratione molestias excepturi voluptas tempora incidunt totam, sit vitae fugit veniam doloremque illo placeat aut minima animi</p><br>
+        <p> reprehenderit suscipit debitis rem magnam provident saepe? Rem, rerum ex delectus asperiores reprehenderit assumenda adipisci eos, voluptas fuga omnis perferendis tenetur, facilis exercitationem. Delectus suscipit quos hic natus eveniet porro sed odio voluptatibus est dolor optio, molestias nulla placeat laudantium aperiam perspiciatis odit. Velit deserunt possimus aliquam, repellat provident sapiente libero consequatur eius tempora magnam perspiciatis expedita vero porro consectetur sed quos. Vitae nesciunt a facere porro qui iste labore repellendus rerum modi iusto hic saepe dignissimos magnam dolores autem, nostrum officia rem commodi sed aliquid ducimus reiciendis corporis eius! Velit illo officia quia at molestias deserunt praesentium, voluptas ipsam, deleniti, minus tempore? Vitae, ex sunt. Repellat quae eum eius aperiam magnam possimus repudiandae, alias a? Reprehenderit quae architecto quos ab excepturi, provident voluptatum rem amet consequatur minima esse nulla vel natus ad optio praesentium saepe. Alias libero, incidunt amet corrupti architecto voluptatum impedit non itaque placeat cumque aliquid, accusamus minus sed distinctio nobis tempore molestias quibusdam minima suscipit eius quis dolores, iste consequuntur quas. Neque praesentium vel quisquam eum corrupti et vitae architecto repellendus maxime vero recusandae laudantium in quasi veniam, libero quis nihil minus sit? Quas ipsum quisquam sit ab et. Cum qui et quia. Asperiores, provident. Molestias aliquid debitis corporis iusto veritatis quaerat repudiandae.</p>
+      </div>
+    </section>
+    <footer class="center" >
+        <div class="follow">
+          <h3 h-primary center>follow us</h3>
+          <h3 h-primary center>on</h3>
+          <ul class="social-links">
+            <li>
+              <a href="https://www.facebook.com"
+                ><img src="/pic/facebook.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com">
+                <img src="/pic/instagram.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com"
+                ><img src="/pic/linkedin.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/#top"
+                ><img src="/pic/pinterest.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"><img src="/pic/twitter.png" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com"><img src="/pic/youtube.png" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot">
+          copyright &copy; www.universitynotes.com. All right reserved!
+        </div>
+      </footer>
+      <script>
+        function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 60;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+      </script>
+</body>
+</html>

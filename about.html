@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | About</title>
+</head>
+<link rel="stylesheet" href="/style/index.css">
+<link rel="stylesheet" href="/style/style.css">
+<style>
+   /* for clock */
+#clock {
+      float: right;
+      letter-spacing: 4px;
+      font-style: italic;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: bold;
+      font-size: 30px;
+      /* box-shadow: -1px 13px 81px -15px; */
+      color: rgb(212, 217, 228);
+      font-size: large;
+      padding: 15px;
+    }
+</style>
+<body>
+  <div class="menu-bar">
+    <ul>
+        <img src="/pic/roytech logo.jpg" alt="">
+        <li class="active"><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#">PROGRAMS</a>
+        <div class="sub-menu">
+            <ul>
+                <li class="hover-me"><a href="bit_prog.html">BIT</a>
+                   
+                </li>
+                <li><a href="bca_prog.html">BCA</a></li>
+               
+            </ul>
+        </div>
+        </li>
+        <li><a href="#">NOTES</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me"><a href="bit_notes.html">BIT</a>
+                       
+                    </li>
+                    <li><a href="bit_notes.html">BCA</a></li>
+                   
+                </ul>
+            </div></li>
+        <li><a href="#">QUESTIONS</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me"><a href="bit_que.html">BIT</a>
+                       
+                    </li>
+                    <li><a href="bit_que.html">BCA</a></li>
+                   
+                </ul>
+            </div></li>
+        <li><a href="#">SYLLABUS</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me"><a href="#">BIT</a>
+                       
+                    </li>
+                    <li><a href="#">BCA</a></li>
+                   
+                </ul>
+            </div></li>
+        <li><a href="contact.html">CONTACT</a></li>
+       <span><a href="/form_validation.html">Login/Signup</a></span>
+    </ul>
+</div>
+  <div id="clock"></div>
+  <script>
+    function updateClock() {
+      var date = new Date();
+      var time = date.toLocaleTimeString();
+      document.getElementById("clock").innerHTML = time;
+    }
+    setInterval(updateClock, 1000);
+  </script>
+    <header >
+        <h1> Technology's field notes and Syllabus</h1><br>
+        <h2>Welcome to UniversityNotes</h2>
+    </header>
+    <section class="abt reveal">
+        <h2>Our Founder</h2><div class="rev reveal">
+        <img src="/pic/IMG_20230402_144913.jpg" alt="" height="180px" width="200px"><br>
+      
+        <span>Rabi kumar Roy</span><br>
+        <span>(Title:Developer)</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat totam distinctio ea fuga! Eum illum voluptates fugit dolor aliquid, beatae sint fuga? Rem exercitationem blanditiis, adipisci nesciunt quae quod, illo dolore ab eos repellendus accusamus maxime. Repellendus soluta et asperiores! Culpa natus inventore doloremque at molestias aut voluptates, alias odio beatae est unde ipsam ea delectus. Accusamus, voluptas? Aliquid ab error laudantium magni harum nam odit dolorem non obcaecati? Amet dignissimos illo, enim, rerum libero earum fugit culpa iusto eveniet sunt molestiae quos perspiciatis error alias placeat omnis! Error modi eum autem velit est quod ab dolorem eligendi! Ad, deleniti.</p>
+      </div>
+      </section>
+    <footer class="center">
+        <div class="follow">
+          <h3 h-primary center>follow us</h3>
+          <h3 h-primary center>on</h3>
+          <ul class="social-links">
+            <li>
+              <a href="https://www.facebook.com"
+                ><img src="/pic/facebook.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com">
+                <img src="/pic/instagram.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com"
+                ><img src="/pic/linkedin.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/#top"
+                ><img src="/pic/pinterest.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"><img src="/pic/twitter.png" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com"><img src="/pic/youtube.png" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot">
+          copyright &copy; www.universitynotes.com. All right reserved!
+        </div>
+      </footer>
+      <script>
+        function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 80;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+      </script>
+</body>
+</html>

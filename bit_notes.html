@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Bit_notes</title>
+    <link rel="stylesheet" href="/style/index.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &::-webkit-scrollbar{
+      display: none;
+     }
+}
+header{
+    text-align: center;
+    justify-content: center;
+    padding: 180px;
+    background-color:#0C0C0C ;
+    height: 500px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #FBFBF2;
+    border-bottom-right-radius: 40%;
+    border-bottom-left-radius: 35%;
+}
+
+    footer {
+        height: 140px;
+        background-color: #1C1C2C;
+        color: white;
+        padding: 10px 17px;
+      }
+      .follow img {
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+      }
+      .follow ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .follow li {
+        list-style: none;
+      }
+      .h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+
+/* for notes */
+.bit_not{
+    margin-top: 65px;
+    height: 650px;
+    box-shadow: -1px 13px 81px -15px rgba(0,0,0,0.34);
+    position: relative;
+    margin-bottom: 30px;
+}
+.bit_not .dropdown button:hover{
+ border: 2px solid #0b4b84;
+}
+.bit_not h2{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 30px;
+}
+/* for dropdown */
+.dropbtn {
+    margin-left: 523px;
+  background-color: #0b4b84;
+  color: white;
+  padding: 16px;
+  border-radius: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+}
+
+.dropdown {
+    margin: 6px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+    margin-left: 710px; 
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* for clock */
+#clock {
+      float: right;
+      letter-spacing: 4px;
+      font-style: italic;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: bold;
+      font-size: 30px;
+      /* box-shadow: -1px 13px 81px -15px; */
+      color: rgb(209, 214, 226);
+      font-size: large;
+      padding: 15px;
+    }
+
+/* for reveal on scroll */
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+</style>
+<body>
+  <div class="menu-bar">
+    <ul>
+        <img src="/pic/roytech logo.jpg" alt="">
+        <li class="active"><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#">PROGRAMS</a>
+        <div class="sub-menu">
+            <ul>
+                <li class="hover-me"><a href="bit_prog.html">BIT</a>
+                   
+                </li>
+                <li><a href="bca_prog.html">BCA</a></li>
+               
+            </ul>
+        </div>
+        </li>
+        <li><a href="#">NOTES</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me"><a href="bit_notes.html">BIT</a>
+                       
+                    </li>
+                    <li><a href="bit_notes.html">BCA</a></li>
+                   
+                </ul>
+            </div></li>
+        <li><a href="#">QUESTIONS</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me"><a href="bit_que.html">BIT</a>
+                       
+                    </li>
+                    <li><a href="bit_que.html">BCA</a></li>
+                   
+                </ul>
+            </div></li>
+        <li><a href="#">SYLLABUS</a>
+            <div class="sub-menu">
+                <ul>
+                    <li class="hover-me"><a href="#">BIT</a>
+                       
+                    </li>
+                    <li><a href="#">BCA</a></li>
+                   
+                </ul>
+            </div></li>
+        <li><a href="contact.html">CONTACT</a></li>
+       <span><a href="/form_validation.html">Login/Signup</a></span>
+    </ul>
+</div> 
+  <div id="clock"></div>
+  <script>
+    function updateClock() {
+      var date = new Date();
+      var time = date.toLocaleTimeString();
+      document.getElementById("clock").innerHTML = time;
+    }
+    setInterval(updateClock, 1000);
+  </script>
+    <header >
+        <h1 > Technology's field notes and Syllabus</h1><br>
+        <h2 >Welcome to UniversityNotes</h2>
+    </header>
+   
+    <section class="bit_not reveal">
+        <h2>BIT Notes</h2>
+        <div class="dropdown reveal">
+            <button class="dropbtn">1st Semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/10u4Xsji3epUIF2z4pKB__A18KZcHeTtb">All Notes</a>
+            </div>
+          </div>
+          <div class="dropdown reveal">
+            <button class="dropbtn">2nd Semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1Ych5TVhI9_dIf2Id9r5VRYG2r0SGsMkk">All Notes</a>
+            </div><br>
+          </div>
+          <div class="dropdown reveal">
+            <button class="dropbtn">3rd Semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1z5nTgxcJn_WYRHyi8DIL1otdYSU8er8D">All Notes</a>
+            </div>
+          </div>
+          <div class="dropdown reveal">
+            <button class="dropbtn">4th semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1OqLg7xBecDHmmk6xWJYOm4qs94s7qjt4">All Notes</a>
+            </div>
+          </div>
+          <div class="dropdown reveal">
+            <button class="dropbtn">5th semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1Upef53t-xfyleW1eisZ9GgqfetrwA1zn">All Notes</a>
+            </div>
+          </div>
+          <div class="dropdown reveal">
+            <button class="dropbtn">6th semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/11w1hR6tXImIfo11e3q5i3x5bRCK4yVHy">All Notes</a>
+            </div>
+          </div>
+          <div class="dropdown reveal">
+            <button class="dropbtn">7th Semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1AUIIgSrJlA3EWC1xhsZmHpG5KuY5AwX5">All Notes</a>
+            </div>
+          </div>
+          <div class="dropdown reveal">
+            <button class="dropbtn">8th semester</button>
+            <div class="dropdown-content">
+            <a href="https://drive.google.com/drive/folders/1jkkDsBMNcbA62B5rrVuSl6CqZ0DLVOQ2">All Notes</a>
+            </div>
+          </div>  
+          
+    </section>
+    <footer class="center" >
+        <div class="follow">
+          <h3 h-primary center>follow us</h3>
+          <h3 h-primary center>on</h3>
+          <ul class="social-links">
+            <li>
+              <a href="https://www.facebook.com"
+                ><img src="/pic/facebook.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com">
+                <img src="/pic/instagram.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com"
+                ><img src="/pic/linkedin.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.com/#top"
+                ><img src="/pic/pinterest.png"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"><img src="/pic/twitter.png" /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com"><img src="/pic/youtube.png" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot">
+          copyright &copy; www.universitynotes.com. All right reserved!
+        </div>
+      </footer>
+      <script>
+        function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 80;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+      </script>
+</body>
+</html>
